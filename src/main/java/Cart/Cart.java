@@ -3,15 +3,15 @@ package Cart;
 import java.util.ArrayList;
 import java.util.List;
 
-import Product.Product;
+import Product.Item;
 
 public class Cart {
-    List<Product> productList = new ArrayList<Product>();
+    List<Item> itemList = new ArrayList<Item>();
 
     Cart() {
     }
 
-    public void add(Product product) {
-        this.productList.add(product);
+    public void add(Item item) {
+        this.itemList.add(item);
     }
 }

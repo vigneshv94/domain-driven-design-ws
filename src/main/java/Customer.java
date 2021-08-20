@@ -1,4 +1,8 @@
+import java.util.HashMap;
+import java.util.Map;
+
 import Cart.Cart;
+import Product.Item;
 import Product.Product;
 
 public class Customer {
@@ -9,9 +13,13 @@ public class Customer {
     }
 
     void shoppingSpree() {
-        Product ipad = new Product("iPad");
-        Product heroInkPen = new Product("Hero Ink Pen");
-        this.cart.add(ipad);
+        Item iPad = new Item(new Product("iPad"), 1);
+        this.cart.add(iPad);
+
+        Item heroInkPen = new Item(new Product("Hero Ink Pen"), 1);
         this.cart.add(heroInkPen);
+
+        Item cricketBat = new Item(new Product("GM Cricket bat"), 2);
+        this.cart.add(cricketBat);
     }
 }
