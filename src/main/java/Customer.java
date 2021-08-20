@@ -13,7 +13,7 @@ public class Customer {
     }
 
     void shoppingSpree() {
-        Item iPad = new Item(new Product("iPad"), 1);
+        Item iPad = new Item(new Product("iPad Pro"), 1);
         this.cart.add(iPad);
 
         Item heroInkPen = new Item(new Product("Hero Ink Pen"), 1);
@@ -21,5 +21,7 @@ public class Customer {
 
         Item cricketBat = new Item(new Product("GM Cricket bat"), 2);
         this.cart.add(cricketBat);
+
+        this.cart.remove(iPad);
     }
 }
